@@ -1,14 +1,16 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 
-const App = () => {
+import Users from "./user/Users";
+
+const App = () => 
+{
   return (
-    <h1>Hello world</h1>
     <Router>
       <Route path='/'>
         <Users/>
       </Route>
-      <Redirect to="/"/>
+      <Redirect to="/Rouen"/>
     </Router>
   );
 };
